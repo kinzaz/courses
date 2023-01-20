@@ -1,0 +1,113 @@
+* {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+
+	border: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a:focus,
+a:active {
+	/* outline: none; */
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: var(--font-family);
+	background-color: var(--white);
+	color: var(--black);
+	text-rendering: optimizelegibility;
+	text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+	font-size: inherit;
+}
+
+button {
+	cursor: pointer;
+
+	color: inherit;
+	background-color: inherit;
+}
+
+a {
+	color: inherit;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+
+	body {
+		color: var(--white);
+		background: black;
+	}
+}
+
+.visuallyHidden {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+:root {
+	--black: #3b434e;
+	--gray-light: #ebebeb;
+	--gray-dark: #746c81;
+	--white: #f5f6f8;
+	--primary: #7653fc;
+	--primary-hover: #502fd3;
+	--red: #fc836d;
+	--red-light: #ffb6a9;
+	--green: #1dc37e;
+	--green-light: #c8f8e4;
+	--font-family: 'Noto Sans', sans-serif;
+}
