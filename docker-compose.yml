@@ -1,5 +1,11 @@
 version: '3'
 services:
-  app: 
+  app:
     image: top-app
     container_name: top-app
+    build: ./
+    ports:
+      - 3000:3000
+    environment:
+      NEXT_PUBLIC_DOMAIN: https://courses-top.ru
+
