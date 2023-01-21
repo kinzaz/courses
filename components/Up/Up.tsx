@@ -27,7 +27,12 @@ const Up = (): JSX.Element => {
 			initial={{ opacity: 0 }}
 			className={styles.up}
 		>
-			<ButtonIcon appearance="primary" icon="up" onClick={scrollToTop} />
+			<ButtonIcon
+				aria-label="Наверх"
+				appearance="primary"
+				icon="up"
+				onClick={scrollToTop}
+			/>
 		</motion.div>
 	);
 };

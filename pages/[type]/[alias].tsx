@@ -15,7 +15,7 @@ import Head from 'next/head';
 import { Error404 } from '../404';
 
 function TopPage({ products, page, firstCategory }: TopPageProps): JSX.Element {
-	if (!page || products) {
+	if (!page || !products) {
 		return <Error404 />;
 	}
 

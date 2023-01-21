@@ -1,36 +1,40 @@
 .sortIcon {
-  display: none;
+	display: none;
 }
 
 .active .sortIcon {
-  display: block;
-  margin-right: 8px;
+	display: block;
+
+	margin-right: 8px;
 }
 
 .active {
-  color: var(--primary);
-  font-weight: bold;
+	color: var(--primary);
+
+	font-weight: bold;
 }
 
 .sort {
-  display: inline-block;
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 40px;
+	display: inline-block;
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 40px;
 }
 
 .sort span {
-  display: grid;
-  gap: 8px;
-  grid-template-columns: 20px 1fr;
-  align-items: center;
-  cursor: pointer;
+	display: grid;
+	gap: 8px;
+	grid-template-columns: 20px 1fr;
+
+	align-items: center;
+
+	cursor: pointer;
 }
 
 .sort span:not(.active) {
-  grid-template-columns: 1fr;
+	grid-template-columns: 1fr;
 }
 
 .sortName {
-  display: none;
+	display: none;
 }

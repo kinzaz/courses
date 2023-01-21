@@ -1,6 +1,7 @@
 .sidebar {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-content: flex-start;
-  gap: 20px;
+	display: grid;
+	grid-template-columns: 1fr;
+
+	align-content: flex-start;
+	gap: 20px;
 }

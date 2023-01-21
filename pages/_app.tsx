@@ -11,7 +11,7 @@ Router.events.on('routeChangeComplete', (url: string) => {
 	}
 });
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
 	return (
 		<>
 			<Head>
@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 				<meta
 					property="og:url"
-					content={process.env.NEXT_PUBLIC_DOMAIN + Router.asPath}
+					content={process.env.NEXT_PUBLIC_DOMAIN + router.asPath}
 				/>
 				<meta property="og:locale" content="ru_RU" />
 			</Head>
