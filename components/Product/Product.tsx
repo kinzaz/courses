@@ -6,7 +6,6 @@ import Tag from '../Tag/Tag';
 import Button from '../Button/Button';
 import { decOfNum, priceRu } from '../../helpers/helpers';
 import Divider from '../Divider/Divider';
-import Image from 'next/image';
 import cn from 'classnames';
 import { ForwardedRef, forwardRef, useRef, useState } from 'react';
 import Review from '../Review/Review';
@@ -45,7 +44,7 @@ const Product = motion(
 				<div className={className} {...props} ref={ref}>
 					<Card className={styles.product}>
 						<div className={styles.logo}>
-							<Image
+							<img
 								src={process.env.NEXT_PUBLIC_DOMAIN + product.image}
 								alt={product.title}
 								width={70}
@@ -54,24 +53,24 @@ const Product = motion(
 						</div>
 						<div className={styles.title}>{product.title}</div>
 						<div className={styles.price}>
-							<span className="visuallyHidden">Цена</span>
+							<span className="visually-hidden">Цена</span>
 							{priceRu(product.price)}{' '}
 							{product.oldPrice && (
 								<Tag className={styles.oldPrice} color="green">
 									<span>
-										<span className={'visuallyHidden'}>Скидка</span>
+										<span className={'visually-hidden'}>Скидка</span>
 										{priceRu(product.price - product.oldPrice)}
 									</span>
 								</Tag>
 							)}
 						</div>
 						<div className={styles.credit}>
-							<span className="visuallyHidden">кредит</span>
+							<span className="visually-hidden">кредит</span>
 							{priceRu(product.credit)}/
 							<span className={styles.month}>мес</span>
 						</div>
 						<div className={styles.rating}>
-							<span className="visuallyHidden">{`Рейтинг + ${
+							<span className="visually-hidden">{`Рейтинг + ${
 								product.reviewAvg ?? product.initialRating
 							}`}</span>
 							<Rating rating={product.reviewAvg ?? product.initialRating} />

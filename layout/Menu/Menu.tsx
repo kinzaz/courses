@@ -149,7 +149,7 @@ const Menu = (): JSX.Element => {
 	return (
 		<nav role={'navigation'} className={styles.menu}>
 			{announce && (
-				<span role={'log'} className="visuallyHidden">
+				<span role={'log'} className="visually-hidden">
 					{announce === 'opened' ? 'развернуто' : 'свернуто'}
 				</span>
 			)}
