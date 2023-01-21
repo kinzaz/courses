@@ -1,7 +1,8 @@
 {
-	"extends": ["stylelint-order-config-standard"],
+	"extends": ["stylelint-config-standard", "stylelint-order-config-standard"],
 	"plugins": ["stylelint-order"],
 	"rules": {
+		"function-calc-no-invalid": null,
 		"indentation": ["tab"],
 		"color-hex-case": "upper"
 	}
